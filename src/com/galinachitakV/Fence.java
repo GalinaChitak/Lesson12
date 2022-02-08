@@ -6,4 +6,5 @@ public class Fence extends Units {
         super(height, width);
         immortal = true;
     }
+
 }

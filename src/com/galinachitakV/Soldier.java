@@ -5,4 +5,5 @@ public class Soldier extends Units2 {
         super(height, width);
 
     }
+
 }

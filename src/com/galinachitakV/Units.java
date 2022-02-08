@@ -22,6 +22,7 @@ public class Units {
     public boolean isImmortal() {
         return immortal;
     }
+
     @Override
     public String toString() {
         return "Units{" +
@@ -30,5 +31,6 @@ public class Units {
                 ", immortal=" + immortal +
                 '}';
     }
+
 }
 

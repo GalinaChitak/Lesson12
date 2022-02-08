@@ -24,7 +24,6 @@ public class Main {
         Tank tank = new Tank(6, 9);
         unitss.add(tank);
 
-
         soldier.fire();
         soldier.move();
 
@@ -37,4 +36,5 @@ public class Main {
         }
 
     }
+
 }

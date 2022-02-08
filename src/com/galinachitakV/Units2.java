@@ -10,6 +10,7 @@ public class Units2 extends Units {
         width++;
     }
 
+
     public void fire() {
         System.out.println("Fire!!!!!!");
     }
