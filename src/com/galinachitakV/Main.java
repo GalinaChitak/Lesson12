@@ -1,5 +1,8 @@
 package com.galinachitakV;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,6 +16,25 @@ public class Main {
 	 Создать классы которые соотвествует каждому юниту и использовать extends если
 	 это целесообразно. Может быть больше классов чем перечилено в задаче если нужно.
 	 Создать список в котором есть юниты всех типов.*/
+        List<Units> unitss = new ArrayList<>();
+        unitss.add(new Fence(1, 2));
+        unitss.add(new Tower(2, 5));
+        Soldier soldier = new Soldier(3, 6);
+        unitss.add(soldier);
+        Tank tank = new Tank(6, 9);
+        unitss.add(tank);
+
+
+        soldier.fire();
+        soldier.move();
+
+        tank.fire();
+        tank.move();
+        tank.reload();
+
+        for (Units units : unitss) {
+            System.out.println(units);
+        }
 
     }
 }

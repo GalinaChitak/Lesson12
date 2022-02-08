@@ -3,12 +3,12 @@ package com.galinachitakV;
 public class Units {
     protected int height;
     protected int width;
-    protected String type;
+    protected boolean immortal = false;
 
-    public Units(int height, int width, String type) {
+    public Units(int height, int width) {
         this.height = height;
         this.width = width;
-        this.type = type;
+
     }
 
     public int getHeight() {
@@ -19,18 +19,16 @@ public class Units {
         return width;
     }
 
-    public String getType() {
-        return type;
+    public boolean isImmortal() {
+        return immortal;
     }
-
     @Override
     public String toString() {
         return "Units{" +
                 "height=" + height +
                 ", width=" + width +
-                ", type='" + type + '\'' +
+                ", immortal=" + immortal +
                 '}';
     }
 }
-
 
